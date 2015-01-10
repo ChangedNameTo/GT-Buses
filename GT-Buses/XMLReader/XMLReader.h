@@ -15,6 +15,8 @@ enum {
 };
 typedef NSUInteger XMLReaderOptions;
 
+extern NSString *const kXMLReaderTextNodeKey;
+
 @interface XMLReader : NSObject <NSXMLParserDelegate>
 
 + (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)errorPointer;
